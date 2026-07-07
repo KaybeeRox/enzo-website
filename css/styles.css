@@ -100,14 +100,20 @@ body {
     border-radius: 18px;
     padding: 35px 25px;
     text-align: center;
+    min-height: 180px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     transition: transform 0.25s ease,
                 box-shadow 0.25s ease;
 }
 
+.feature-card i {
+    color: #C7A46C;
+}
+
 .feature-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+    cursor: pointer;
 }
 
 .feature-icon {
@@ -194,4 +200,34 @@ body {
 
 .gold-heart {
     color: #C7A46C;
+}
+
+/* Navigation */
+
+.main-nav {
+    text-align: center;
+    margin: 25px 0 40px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #1D2F4F;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+    font-size: 1.05rem;
+}
+
+.main-nav a:hover {
+    color: #C7A46C;
+}
+
+.main-nav i {
+    margin-right: 8px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
