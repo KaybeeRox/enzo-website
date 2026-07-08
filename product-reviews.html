@@ -12,105 +12,75 @@
 
 <body>
 
-<header class="hero">
-    <img class="hero-banner" src="images/enzo-banner.jpg" alt="Enzo Has Notes banner">
+<header class="site-header">
+    <a href="index.html" class="logo-link" aria-label="Go to homepage">
+        <img src="images/enzo-logo.png" alt="Enzo Has Notes" class="site-logo">
+    </a>
 
-    <div class="hero-content">
-        <img class="hero-photo" src="images/enzo.jpg" alt="Enzo the Cockapoo">
+    <nav class="main-nav" aria-label="Main navigation">
+        <a href="product-reviews.html">
+    <i class="fa-solid fa-paw"></i> Product Reviews
+</a>
 
-        <main>
+<a href="#">
+    <i class="fa-solid fa-video"></i> Latest Videos
+</a>
 
-    <h2>🐾 Product Reviews 🐾</h2>
+<a href="#">
+    <i class="fa-solid fa-file-lines"></i> Incident Reports
+</a>
 
-    <p>
-        Honest reviews of toys, treats, accessories and everything Enzo has tested.
-    </p>
-
-    <p>
-        Coming soon...
-    </p>
-
-</main>
-    </div>
+<a href="#">
+    <i class="fa-solid fa-star"></i> Enzo Recommends
+</a>
+    </nav>
 </header>
     
-    <div class="social-links">
+    <main class="reviews-page">
 
-    <a href="https://www.youtube.com/@enzohasnotes" target="_blank" aria-label="YouTube">
-        <i class="fa-brands fa-youtube"></i>
-    </a>
+    <section class="reviews-intro">
+        <p class="eyebrow">Official Product Reviews</p>
+        <h1>Enzo-Tested Products</h1>
+        <p>
+            Toys, treats, beds, bowls, and accessories personally inspected by
+            Enzo, CEO of Snacks and Morale.
+        </p>
+    </section>
 
-    <a href="https://www.instagram.com/enzohasnotes" target="_blank" aria-label="Instagram">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
+    <section class="review-filters" aria-label="Product review categories">
+        <button class="filter-pill active">All</button>
+        <button class="filter-pill">Toys</button>
+        <button class="filter-pill">Treats</button>
+        <button class="filter-pill">Beds</button>
+        <button class="filter-pill">Bowls & Feeders</button>
+        <button class="filter-pill">Accessories</button>
+    </section>
 
-    <a href="https://www.tiktok.com/@enzohasnotes" target="_blank" aria-label="TikTok">
-        <i class="fa-brands fa-tiktok"></i>
-    </a>
+    <section class="review-grid">
 
-    <a href="https://www.facebook.com/enzohasnotes" target="_blank" aria-label="Facebook">
-        <i class="fa-brands fa-facebook"></i>
-    </a>
+        <a href="reviews/petface-teddybear.html" class="review-card">
+            <img src="images/reviews/petface-teddybear.jpg" alt="Enzo with the Petface teddy bear toy">
 
-    <a href="https://x.com/enzohasnotes" target="_blank" aria-label="X">
-        <i class="fa-brands fa-x-twitter"></i>
-    </a>
+            <div class="review-card-content">
+                <p class="review-category">Toys</p>
+                <h2>Petface Teddy Bear</h2>
 
-    <a href="https://giphy.com/channel/enzohasnotes" target="_blank" aria-label="GIPHY">
-        GIPHY
-    </a>
+                <div class="review-card-rating">
+                    🐾🐾🐾🐾🐾
+                    <span>CEO Approved</span>
+                </div>
 
-</div>
+                <p>
+                    A soft, squeaky teddy bear that received immediate workplace approval.
+                </p>
 
-<section class="welcome-section">
-    <h2>Meet Enzo</h2>
+                <span class="read-review">Read Review →</span>
+            </div>
+        </a>
 
-    <p>
-        <strong>Enzo Has Notes</strong> is where one very fluffy Cockapoo documents the daily injustices of office life, reviews products, shares workplace "incident reports", and occasionally allows his human to do the typing.
-    </p>
+    </section>
 
-    <p>
-        Whether you found Enzo on YouTube, TikTok, Instagram, Facebook, or somewhere else on the internet, welcome! This is home base—where you'll find product recommendations, favourite toys, behind-the-scenes stories, and everything that doesn't quite fit into a social media post.
-    </p>
-</section>
-
-<section class="features">
-
-    <div class="feature-card">
-        <div class="feature-icon">
-        <i class="fa-solid fa-paw"></i>
-        </div>
-        <h3>Product Reviews</h3>
-        <p>Honest reviews of toys, treats and products Enzo actually uses.</p>
-        
-    </div>
-
-    <div class="feature-card">
-        <div class="feature-icon">
-        <i class="fa-solid fa-video"></i>
-        </div>
-        <h3>Latest Videos</h3>
-        <p>Catch up on Enzo's latest adventures from YouTube and across social media.</p>
-    </div>
-
-    <div class="feature-card">
-        <div class="feature-icon">
-        <i class="fa-solid fa-file-lines"></i>
-        </div>
-        <h3>Incident Reports</h3>
-        <p>Official reports documenting the daily injustices of office life from the CEO himself.</p>
-        
-    </div>
-
-    <div class="feature-card">
-        <div class="feature-icon">
-        <i class="fa-solid fa-star"></i>
-        </div>
-        <h3>Enzo's Picks</h3>
-        <p>Enzo's favourite products, toys, and treats that he recommends to his fans.</p>
-    </div>
-
-</section>
+</main>
 
 <footer class="site-footer">
 
