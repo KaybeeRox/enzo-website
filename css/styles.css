@@ -939,4 +939,25 @@ body {
     .site-logo {
         width: 135px;
     }
+}/* Mobile product review grid */
+
+@media (max-width: 800px) {
+
+    .reviews-page {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .review-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        width: 100%;
+    }
+
+    .review-card {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
 }
+
