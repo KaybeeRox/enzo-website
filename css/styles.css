@@ -961,3 +961,431 @@ body {
     }
 }
 
+/* =========================================================
+   LATEST VIDEOS PAGE
+========================================================= */
+
+.videos-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.videos-intro {
+    max-width: 760px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.videos-intro h1 {
+    color: #001A39;
+    font-size: 2.75rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.videos-intro p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FEATURED VIDEO SECTION
+========================================================= */
+
+.featured-video-section {
+    margin: 3rem 0 5rem;
+    padding: 2.5rem;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(29, 53, 87, 0.12);
+    text-align: left;
+}
+
+.featured-investigation-heading {
+    margin-bottom: 1.75rem;
+}
+
+.featured-investigation-heading h2 {
+    margin: 0.5rem 0 0;
+    color: #001A39;
+    font-family: Georgia, serif;
+    font-size: 2rem;
+}
+
+
+/* =========================================================
+   FEATURED EVIDENCE ROW
+========================================================= */
+
+.featured-evidence-row {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.4fr);
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.case-file-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.featured-evidence-row .case-file {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.case-youtube-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin: 0.25rem;
+
+    box-sizing: border-box;
+}
+
+.featured-video-player {
+    position: static;
+    width: 100%;
+    align-self: start;
+}
+
+/* =========================================================
+   FEATURED INVESTIGATION REPORT
+========================================================= */
+
+.featured-investigation-report {
+    width: 100%;
+    margin-top: 1.5rem;
+    display: block;
+}
+
+.featured-investigation-report .ceo-notes {
+    margin: 0 0 1.5rem;
+}
+
+.featured-investigation-report .management-verdict {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    background: #001A39;
+    border-radius: 14px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.youtube-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 22px;
+    background: #001A39;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 8px;
+    transition: transform 0.2s ease,
+                background-color 0.2s ease;
+}
+
+.youtube-button:hover {
+    background: #C7A46C;
+    color: #001A39;
+    transform: translateY(-2px);
+}
+
+.youtube-button i {
+    font-size: 1.4rem;
+}
+
+.uploads-section {
+    margin: 5rem 0;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.section-heading h2 {
+    color: #001A39;
+    font-family: Georgia, serif;
+    font-size: 2.2rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.section-heading p {
+    line-height: 1.7;
+}
+
+.uploads-player {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.youtube-callout {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 5rem 0 1rem;
+    padding: 2rem;
+    background: #FFF8E8;
+    border: 1px solid #DEC89E;
+    border-left: 8px solid #D49A28;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.youtube-callout h2 {
+    color: #001A39;
+    font-family: Georgia, serif;
+    margin: 0 0 0.5rem;
+}
+
+.youtube-callout p {
+    line-height: 1.6;
+    margin: 0;
+}
+
+.youtube-callout .youtube-button {
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   FEATURED VIDEO PLAYER
+===================================================== */
+
+.featured-video-player {
+    position: sticky;
+    top: 110px;
+    align-self: start;
+}
+
+.featured-video-player .video-wrapper {
+    margin-bottom: 1rem;
+}
+
+/* =========================================================
+   LATEST VIDEOS — MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .videos-page {
+        padding: 2.5rem 16px;
+    }
+
+    .videos-intro h1 {
+        font-size: 2.25rem;
+    }
+
+    .featured-video-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 2rem 0 4rem;
+        padding: 1.5rem;
+    }
+
+    .featured-video-text {
+        text-align: center;
+    }
+
+    .featured-video-player {
+        width: 100%;
+    }
+
+    .youtube-callout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .youtube-callout .youtube-button {
+        margin-left: 0;
+    }
+}
+
+/* =====================================================
+   CASE FILE
+===================================================== */
+
+.case-file {
+    position: relative;
+    margin: 1.75rem 0 2rem;
+    padding: 1.5rem;
+    background: #F8F3E8;
+    border: 1px solid #E3D2B3;
+    border-left: 6px solid #C7A46C;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.case-file-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.4rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #DCC9A8;
+}
+
+.case-number {
+    margin: 0;
+    color: #001A39;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.case-stamp {
+    display: inline-block;
+    padding: 0.4rem 0.65rem;
+    border: 2px solid #B06D3B;
+    border-radius: 5px;
+    color: #B06D3B;
+    font-size: 0.68rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    transform: rotate(-2deg);
+}
+
+.case-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem 2rem;
+}
+
+.case-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.case-label {
+    color: #C28A1D;
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.case-value {
+    color: #001A39;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+/* =====================================================
+   CEO NOTES AND MANAGEMENT VERDICT
+===================================================== */
+
+.ceo-notes {
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.ceo-notes-title {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin: 0 0 1rem;
+    color: #C28A1D;
+    font-family: Georgia, serif;
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.ceo-notes-title i {
+    font-size: 1.1rem;
+}
+
+.ceo-notes p {
+    margin-bottom: 1rem;
+    line-height: 1.75;
+}
+
+.management-verdict {
+    margin: 2rem 0;
+    padding: 1.25rem 1.4rem;
+    background: #FFF8E8;
+    border-left: 5px solid #C7A46C;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.management-verdict h3 {
+    margin: 0 0 0.65rem;
+    color: #001A39;
+    font-family: Georgia, serif;
+    font-size: 1.15rem;
+}
+
+.management-verdict p {
+    margin: 0;
+    line-height: 1.65;
+}
+
+/* =====================================================
+   CASE FILE AND CEO NOTES - MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .case-file {
+        padding: 1.25rem;
+    }
+
+    .case-file-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .case-stamp {
+        transform: none;
+    }
+
+    .case-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .ceo-notes-title {
+        justify-content: center;
+    }
+
+    .ceo-notes,
+    .management-verdict {
+        text-align: left;
+    }
+
+}
+
+
