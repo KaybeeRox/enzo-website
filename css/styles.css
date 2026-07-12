@@ -887,3 +887,56 @@ body {
     text-decoration: underline;
 }
 
+/* Mobile header consistency */
+
+@media (max-width: 800px) {
+
+    .site-header {
+        height: auto;
+        padding: 18px 16px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .site-logo {
+        width: 150px;
+        max-height: none;
+    }
+
+    .main-nav {
+        width: 100%;
+        max-width: 460px;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        gap: 12px 28px;
+    }
+
+    .main-nav a {
+        margin: 0;
+        font-size: 0.78rem;
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+
+    .main-nav i {
+        margin-right: 6px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .main-nav {
+        gap: 10px 18px;
+    }
+
+    .main-nav a {
+        font-size: 0.7rem;
+    }
+
+    .site-logo {
+        width: 135px;
+    }
+}
