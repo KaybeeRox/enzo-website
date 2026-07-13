@@ -1187,45 +1187,6 @@ body {
     margin-bottom: 1rem;
 }
 
-/* =========================================================
-   LATEST VIDEOS — MOBILE
-========================================================= */
-
-@media (max-width: 800px) {
-
-    .videos-page {
-        padding: 2.5rem 16px;
-    }
-
-    .videos-intro h1 {
-        font-size: 2.25rem;
-    }
-
-    .featured-video-section {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        margin: 2rem 0 4rem;
-        padding: 1.5rem;
-    }
-
-    .featured-video-text {
-        text-align: center;
-    }
-
-    .featured-video-player {
-        width: 100%;
-    }
-
-    .youtube-callout {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .youtube-callout .youtube-button {
-        margin-left: 0;
-    }
-}
-
 /* =====================================================
    CASE FILE
 ===================================================== */
@@ -1353,39 +1314,233 @@ body {
     line-height: 1.65;
 }
 
-/* =====================================================
-   CASE FILE AND CEO NOTES - MOBILE
-===================================================== */
+/* =========================================================
+   LATEST VIDEOS — MOBILE
+========================================================= */
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
+
+    /* -----------------------------------------------------
+       PAGE LAYOUT
+    ----------------------------------------------------- */
+
+    .videos-page {
+        width: 100%;
+        max-width: 100%;
+        padding: 1.5rem 12px 3rem;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .videos-intro {
+        width: 100%;
+    }
+
+    .videos-intro h1 {
+        margin: 0.5rem 0 1.5rem;
+        font-size: clamp(2.25rem, 10vw, 3.5rem);
+        line-height: 1;
+        overflow-wrap: break-word;
+    }
+
+
+    /* -----------------------------------------------------
+       FEATURED INVESTIGATION LAYOUT
+    ----------------------------------------------------- */
+
+    .featured-evidence-row {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.5rem;
+        width: 100%;
+        align-items: start;
+    }
+
+    .case-file-column {
+        width: 100%;
+        min-width: 0;
+        gap: 1rem;
+    }
+
+    .featured-evidence-row .case-file {
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+    }
+
+    .featured-video-player {
+        position: static;
+        top: auto;
+        width: 100%;
+        min-width: 0;
+        align-self: auto;
+    }
+
+    .featured-video-player .video-wrapper {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+
+    /* -----------------------------------------------------
+       CASE FILE
+    ----------------------------------------------------- */
 
     .case-file {
+        width: 100%;
+        margin: 1.25rem 0 1.5rem;
         padding: 1.25rem;
+        box-sizing: border-box;
     }
 
     .case-file-header {
         flex-direction: column;
         align-items: flex-start;
+        gap: 0.75rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .case-number {
+        font-size: 1rem;
+        line-height: 1.3;
     }
 
     .case-stamp {
+        max-width: 100%;
+        padding: 0.45rem 0.65rem;
+        font-size: 0.68rem;
+        line-height: 1.25;
+        white-space: normal;
         transform: none;
     }
 
     .case-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.1rem;
+    }
+
+    .case-detail {
+        min-width: 0;
+    }
+
+    .case-label {
+        font-size: 0.72rem;
+    }
+
+    .case-value {
+        font-size: 1rem;
+        overflow-wrap: break-word;
+    }
+
+
+    /* -----------------------------------------------------
+       YOUTUBE BUTTON
+    ----------------------------------------------------- */
+
+    .case-youtube-button {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .case-youtube-button .youtube-button,
+    .youtube-button {
+        width: 100%;
+        min-height: 58px;
+        padding: 14px 18px;
+        box-sizing: border-box;
+        text-align: center;
+        white-space: normal;
+    }
+
+
+    /* -----------------------------------------------------
+       FEATURED INVESTIGATION REPORT
+    ----------------------------------------------------- */
+
+    .featured-investigation-report {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .featured-investigation-report .ceo-notes {
+        margin: 0 0 1.5rem;
+    }
+
+    .featured-investigation-report .management-verdict {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    /* -----------------------------------------------------
+       CEO NOTES AND MANAGEMENT VERDICT
+    ----------------------------------------------------- */
+
+    .ceo-notes {
+        margin: 2rem 0;
+        text-align: left;
     }
 
     .ceo-notes-title {
         justify-content: center;
+        gap: 0.5rem;
+        font-size: clamp(1.35rem, 6vw, 1.8rem);
+        line-height: 1.2;
+        text-align: center;
     }
 
-    .ceo-notes,
+    .ceo-notes p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
     .management-verdict {
+        width: 100%;
+        margin: 1.5rem 0;
+        padding: 1.15rem;
+        box-sizing: border-box;
         text-align: left;
     }
 
+
+    /* -----------------------------------------------------
+       VIDEO UPLOADS SECTION
+    ----------------------------------------------------- */
+
+    .uploads-section {
+        margin: 3rem 0;
+    }
+
+    .section-heading {
+        margin-bottom: 1.5rem;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(1.75rem, 8vw, 2.2rem);
+    }
+
+    .uploads-player {
+        width: 100%;
+    }
+
+
+    /* -----------------------------------------------------
+       YOUTUBE CALLOUT
+    ----------------------------------------------------- */
+
+    .youtube-callout {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.25rem;
+        margin: 3rem 0 1rem;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .youtube-callout .youtube-button {
+        width: 100%;
+        margin-left: 0;
+        white-space: normal;
+    }
 }
-
-
