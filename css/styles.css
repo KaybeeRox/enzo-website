@@ -1544,3 +1544,213 @@ body {
         white-space: normal;
     }
 }
+
+/* =========================================================
+   INCIDENT REPORT ARTICLE
+========================================================= */
+
+.incident-article {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.incident-hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.incident-hero h1 {
+    color: #001A39;
+    font-family: Georgia, serif;
+    font-size: 2.6rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.incident-article .verdict-box {
+    margin: 2rem 0;
+}
+
+.incident-article .case-file {
+    margin: 2rem 0;
+}
+
+.incident-article .review-content {
+    text-align: left;
+}
+
+.incident-article .review-content h2 {
+    margin-top: 2.25rem;
+    margin-bottom: 1rem;
+    color: #001A39;
+    font-family: Georgia, serif;
+}
+
+.incident-article .review-content p {
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+}
+
+/* =========================================================
+   INCIDENT REPORT TIMELINE
+========================================================= */
+
+.timeline {
+    list-style: none;
+    margin: 1.5rem 0 2rem;
+    padding: 0;
+    border-left: 3px solid #C7A46C;
+}
+
+.timeline li {
+    position: relative;
+    margin-left: 1.25rem;
+    padding: 0 0 1.5rem 1.25rem;
+    line-height: 1.65;
+}
+
+.timeline li::before {
+    content: "";
+    position: absolute;
+    left: -1.7rem;
+    top: 0.35rem;
+    width: 12px;
+    height: 12px;
+    background: #C7A46C;
+    border: 3px solid #FFF8E8;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #C7A46C;
+}
+
+.timeline li:last-child {
+    padding-bottom: 0;
+}
+
+.timeline strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #001A39;
+    font-size: 1.05rem;
+}
+
+/* =========================================================
+   INCIDENT REPORT OUTCOME
+========================================================= */
+
+.incident-status {
+    display: inline-block;
+    margin: 0.5rem 0 1rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.incident-status.approved {
+    background: #E8F4EA;
+    color: #25663A;
+    border: 1px solid #9BC6A5;
+}
+
+.incident-footer-note {
+    margin: 2.5rem 0 0;
+    padding: 1.5rem;
+    background: #F8F3E8;
+    border-left: 5px solid #C7A46C;
+    border-radius: 10px;
+    color: #001A39;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* =========================================================
+   INCIDENT REPORT ARTICLE - MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .incident-article {
+        padding: 2.25rem 16px;
+    }
+
+    .incident-hero h1 {
+        font-size: 2rem;
+    }
+
+    .incident-article .verdict-box,
+    .incident-article .affiliate-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .incident-article .case-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline li {
+        margin-left: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+/* =========================================================
+   INCIDENT REPORT LANDING PAGE
+========================================================= */
+
+.incident-card-icon {
+    height: 200px;
+    display: grid;
+    place-items: center;
+    background: #F8F3E8;
+    color: #C7A46C;
+    font-size: 4rem;
+    border-bottom: 1px solid #E3D2B3;
+}
+
+.incident-card-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.incident-card-meta span {
+    margin-top: 0;
+}
+
+.incident-severity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: #555;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.severity-dot {
+    width: 10px;
+    height: 10px;
+    background: #D49A28;
+    border-radius: 50%;
+}
+
+/* =========================================================
+   INCIDENT REPORT LANDING PAGE - MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .incident-card-icon {
+        height: 150px;
+        font-size: 3rem;
+    }
+
+    .incident-severity {
+        justify-content: center;
+        text-align: center;
+    }
+
+}
