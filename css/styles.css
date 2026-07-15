@@ -1754,3 +1754,200 @@ body {
     }
 
 }
+
+/* ===================================
+   PRODUCT REVIEW PAGE
+=================================== */
+
+.review-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.review-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.review-category {
+    color: #C7A46C;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.review-intro {
+    max-width: 700px;
+    margin: 1rem auto 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.review-overview {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin: 2rem 0;
+}
+
+.review-main-image {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.review-summary-card {
+    background: #f8f9fb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+.review-rating,
+.final-rating {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.half-rating {
+    font-size: 1.4rem;
+    vertical-align: middle;
+}
+
+.review-details dt {
+    font-weight: bold;
+    color: #1D3557;
+}
+
+.review-details dd {
+    margin-bottom: 1rem;
+}
+
+.photo-caption {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.review-section {
+    margin-bottom: 3rem;
+}
+
+.review-section h2 {
+    color: #1D3557;
+    margin-bottom: 1rem;
+}
+
+.review-section h3 {
+    margin-top: 1.5rem;
+    color: #333;
+}
+
+.score-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 1.5rem;
+}
+
+.score-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+.score-card .score {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #C7A46C;
+}
+
+.safety-note {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background: #fff8e6;
+    border-left: 5px solid #C7A46C;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.safety-note i {
+    font-size: 2rem;
+    color: #C7A46C;
+}
+
+.pros-cons-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.pros-card,
+.cons-card {
+    background: #f8f9fb;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+.pros-card h2 {
+    color: #2E7D32;
+}
+
+.cons-card h2 {
+    color: #B00020;
+}
+
+.final-verdict {
+    text-align: center;
+    background: #f8f9fb;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 3rem 0;
+}
+
+.verdict-label {
+    text-transform: uppercase;
+    color: #C7A46C;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.enzo-note {
+    margin-top: 2rem;
+    font-style: italic;
+}
+
+.review-disclosure {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background: #eef3f8;
+    border-radius: 12px;
+}
+
+.back-to-reviews {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.back-to-reviews a {
+    display: inline-block;
+    background: #1D3557;
+    color: white;
+    padding: .8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.back-to-reviews a:hover {
+    background: #284b75;
+}
+
