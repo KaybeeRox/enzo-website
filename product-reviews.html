@@ -25,14 +25,14 @@
         </a>
 
         <a href="latest-videos.html">
-            <i css="fa-solid fa-video"></i> Latest Videos
+            <i class="fa-solid fa-video"></i> Latest Videos
         </a>
 
-        <a href="#">
+        <a href="incident-reports.html">
             <i class="fa-solid fa-file-lines"></i> Incident Reports
         </a>
 
-        <a href="#">
+        <a href="enzo-recommends.html">
             <i class="fa-solid fa-star"></i> Enzo Recommends
         </a>
     </nav>
@@ -51,17 +51,58 @@
     </section>
 
     <section class="review-filters" aria-label="Product review categories">
-        <button class="filter-pill active">All</button>
-        <button class="filter-pill">Toys</button>
-        <button class="filter-pill">Treats</button>
-        <button class="filter-pill">Beds</button>
-        <button class="filter-pill">Bowls & Feeders</button>
-        <button class="filter-pill">Accessories</button>
+        <div class="review-filters" aria-label="Filter product reviews">
+
+            <button
+                type="button"
+                class="filter-pill active"
+                data-filter="all">
+                All
+            </button>
+
+            <button
+                type="button"
+                class="filter-pill"
+                data-filter="toys">
+                Toys
+            </button>
+
+            <button
+                type="button"
+                class="filter-pill"
+                data-filter="treats">
+                Treats
+            </button>
+
+            <button
+                type="button"
+                class="filter-pill"
+                data-filter="beds">
+                Beds
+            </button>
+
+            <button
+                type="button"
+                class="filter-pill"
+                data-filter="bowls-feeders">
+                Bowls &amp; Feeders
+            </button>
+
+            <button
+                type="button"
+                class="filter-pill"
+                data-filter="accessories">
+                Accessories
+            </button>
+
+        </div>
     </section>
 
     <section class="review-grid">
 
-        <a href="reviews/petface-teddybear.html" class="review-card">
+        <a href="reviews/petface-teddybear.html" 
+            class="review-card"
+            data-category="toys">
             <img src="images/reviews/petface-teddy-bear-review.jpg" alt="Enzo with the Petface teddy bear toy">
 
             <div class="review-card-content">
@@ -86,7 +127,8 @@
         </a>
 
         <a href="reviews/petface-latex-pig.html"
-        class="review-card">
+            class="review-card"
+            data-category="toys">
 
             <img src="images/reviews/petface-latex-pig-review.jpg"
                 alt="Enzo with the Petface Latex Pig dog toy">
@@ -129,7 +171,8 @@
         </a>
 
         <a href="reviews/petface-nobbly-crocodile.html"
-        class="review-card">
+            class="review-card"
+            data-category="toys">
 
             <img src="images/reviews/petface-nobbly-crocodile-review.jpg"
                 alt="Enzo with the Petface Nobbly Crocodile toy">
@@ -171,7 +214,8 @@
         </a>
 
         <a href="reviews/petface-cyril-the-squirrel.html"
-        class="review-card">
+            class="review-card"
+            data-category="toys">
 
             <img src="images/reviews/petface-cyril-the-squirrel-review.jpg"
                 alt="Enzo with the Petface Cyril the Squirrel toy">
@@ -213,7 +257,8 @@
         </a>
 
         <a href="reviews/petface-snuffle-ball.html"
-        class="review-card">
+            class="review-card"
+            data-category="bowls-feeders">
 
             <img src="images/reviews/petface-snuffle-ball-review.jpg"
                 alt="Enzo with the Petface Snuffle Ball toy">
@@ -254,6 +299,49 @@
 
         </a>
 
+                <a href="reviews/petface-dougie-dog.html"
+                    class="review-card"
+                    data-category="toys">
+
+            <img src="images/reviews/petface-dougie-dog-review.jpg"
+                alt="Enzo with the Petface Dougie Dog toy">
+
+            <div class="review-card-content">
+
+                <p class="review-category">
+                    Toys
+                </p>
+
+                <h2>
+                    Petface Dougie Dog
+                </h2>
+
+                <div class="review-card-rating">
+
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    
+                    
+
+                    <span>
+                        CEO Approved
+                    </span>
+
+                </div>
+
+                <p>
+                    A long, squeaky sausage dog that quickly became a workplace favourite—despite an unfortunately short career.
+                </p>
+
+                <span class="read-review">
+                    Read Review →
+                </span>
+
+            </div>
+
+        </a>
+
     </section>
 
 </main>
@@ -267,11 +355,11 @@
     <nav class="footer-nav"
          aria-label="Footer navigation">
 
-        <a href="../index.html">Home</a>
-        <a href="../product-reviews.html">Product Reviews</a>
-        <a href="../latest-videos.html">Latest Videos</a>
-        <a href="../incident-reports.html">Incident Reports</a>
-        <a href="../enzo-recommends.html">Enzo Recommends</a>
+        <a href="index.html">Home</a>
+        <a href="product-reviews.html">Product Reviews</a>
+        <a href="latest-videos.html">Latest Videos</a>
+        <a href="incident-reports.html">Incident Reports</a>
+        <a href="enzo-recommends.html">Enzo Recommends</a>
 
     </nav>
 
@@ -338,10 +426,10 @@
 
     <div class="footer-links">
 
-        <a href="../contact.html">Contact</a>
-        <a href="../privacy-policy.html">Privacy Policy</a>
-        <a href="../affiliate-disclosure.html">Affiliate Disclosure</a>
-        <a href="../terms.html">Terms of Use</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+        <a href="terms.html">Terms of Use</a>
 
     </div>
 
@@ -355,6 +443,8 @@
     </p>
 
 </footer>
+
+<script src="js/review-filters.js"></script>
 
 </body>
 

@@ -434,6 +434,7 @@ body {
     color: #001A39;
 }
 
+
 .review-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
@@ -1816,6 +1817,15 @@ body {
     vertical-align: middle;
 }
 
+.half-paw {
+    color: #C7A46C;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 2px;
+    line-height: 1;
+    display: inline-block;
+}
+
 .review-details dt {
     font-weight: bold;
     color: #1D3557;
@@ -1951,3 +1961,27 @@ body {
     background: #284b75;
 }
 
+
+.filter-button {
+    background: transparent;
+    color: #001b3b;
+    border: 3px solid #c9a461;
+    border-radius: 999px;
+    padding: 0.8rem 1.75rem;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.filter-button:hover {
+    transform: translateY(-2px);
+}
+
+.filter-button.active {
+    background: #c9a461;
+    color: #001b3b;
+}
