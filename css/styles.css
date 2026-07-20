@@ -2120,3 +2120,1150 @@ body {
     }
 
 }
+
+/* =====================================================
+   MEET THE CEO / ABOUT ENZO PAGE
+====================================================== */
+
+.about-enzo-page {
+    background: #f7f5f0;
+    color: #1d2d44;
+}
+
+
+/* =====================================================
+   SHARED ABOUT PAGE TYPOGRAPHY
+====================================================== */
+
+.about-enzo-page h1,
+.about-enzo-page h2,
+.about-enzo-page h3 {
+    color: #1d2d44;
+}
+
+.about-enzo-page h1 {
+    margin: 0 0 24px;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    line-height: 0.95;
+    letter-spacing: -0.045em;
+}
+
+.about-enzo-page h2 {
+    margin: 0 0 22px;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+}
+
+.about-enzo-page h3 {
+    margin: 0 0 12px;
+    font-size: 1.3rem;
+    line-height: 1.25;
+}
+
+.about-enzo-page p {
+    line-height: 1.75;
+}
+
+.about-enzo-page .eyebrow {
+    margin: 0 0 14px;
+    color: #9a7844;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.chapter-number {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 15px;
+    color: #9a7844;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.chapter-number::before {
+    width: 32px;
+    height: 1px;
+    background: #c7a46c;
+    content: "";
+}
+
+.section-heading {
+    max-width: 760px;
+    margin: 0 auto 55px;
+}
+
+.centered-heading {
+    text-align: center;
+}
+
+.centered-heading p:not(.eyebrow) {
+    max-width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #536277;
+    font-size: 1.05rem;
+}
+
+
+/* =====================================================
+   HERO
+====================================================== */
+
+.about-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
+    gap: 70px;
+    align-items: center;
+    max-width: 1240px;
+    min-height: 720px;
+    margin: 0 auto;
+    padding: 90px 45px;
+}
+
+.about-hero-content {
+    max-width: 670px;
+}
+
+.about-hero-tagline {
+    margin: 0 0 25px;
+    color: #1d2d44;
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+    font-weight: 700;
+    line-height: 1.45 !important;
+}
+
+.about-hero-content > p:not(.eyebrow):not(.about-hero-tagline) {
+    color: #536277;
+    font-size: 1.06rem;
+}
+
+.about-hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.about-hero-badges span {
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+    padding: 11px 15px;
+    border: 1px solid rgba(199, 164, 108, 0.5);
+    border-radius: 999px;
+    background: #ffffff;
+    color: #1d2d44;
+    font-size: 0.88rem;
+    font-weight: 700;
+    box-shadow: 0 8px 25px rgba(29, 45, 68, 0.06);
+}
+
+.about-hero-badges i {
+    color: #c7a46c;
+}
+
+.about-hero-image {
+    min-height: 560px;
+    border-radius: 220px 220px 28px 28px;
+    box-shadow: 0 30px 70px rgba(29, 45, 68, 0.16);
+}
+
+
+/* =====================================================
+   PHOTO PLACEHOLDERS AND REAL IMAGES
+====================================================== */
+
+.photo-placeholder {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border: 2px dashed rgba(154, 120, 68, 0.48);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.96),
+            rgba(229, 225, 216, 0.92)
+        );
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placeholder-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    max-width: 320px;
+    padding: 35px;
+    color: #677386;
+    text-align: center;
+}
+
+.placeholder-inner i {
+    color: #c7a46c;
+    font-size: 2rem;
+}
+
+.placeholder-inner strong {
+    color: #1d2d44;
+    font-size: 1rem;
+}
+
+.placeholder-inner span {
+    font-size: 0.88rem;
+    line-height: 1.55;
+}
+
+
+/* =====================================================
+   CEO PROFILE
+====================================================== */
+
+.ceo-profile-section {
+    padding: 0 45px 100px;
+}
+
+.ceo-profile-card {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 55px;
+    border: 1px solid rgba(199, 164, 108, 0.38);
+    border-radius: 24px;
+    background: #ffffff;
+    box-shadow: 0 25px 60px rgba(29, 45, 68, 0.08);
+}
+
+.ceo-profile-heading {
+    margin-bottom: 35px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e7e2d8;
+}
+
+.ceo-profile-heading h2 {
+    margin-bottom: 0;
+}
+
+.ceo-profile-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px 35px;
+    margin: 0;
+}
+
+.ceo-profile-grid div {
+    min-width: 0;
+}
+
+.ceo-profile-grid dt {
+    margin-bottom: 7px;
+    color: #9a7844;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.ceo-profile-grid dd {
+    margin: 0;
+    color: #1d2d44;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+
+/* =====================================================
+   STORY SECTIONS
+====================================================== */
+
+.about-story-section {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.85fr);
+    gap: 80px;
+    align-items: center;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 110px 45px;
+}
+
+.about-story-section + .about-story-section {
+    border-top: 1px solid rgba(199, 164, 108, 0.22);
+}
+
+.story-section-reversed .story-copy {
+    order: 2;
+}
+
+.story-section-reversed .story-image {
+    order: 1;
+}
+
+.story-copy p:not(.chapter-number):not(.story-aside) {
+    margin: 0 0 18px;
+    color: #536277;
+    font-size: 1.02rem;
+}
+
+.story-image {
+    min-height: 480px;
+    border-radius: 24px;
+    box-shadow: 0 24px 55px rgba(29, 45, 68, 0.12);
+}
+
+.story-aside {
+    margin: 30px 0 0;
+    padding: 22px 25px;
+    border-left: 4px solid #c7a46c;
+    background: #ffffff;
+    color: #1d2d44;
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1.5 !important;
+    box-shadow: 0 10px 30px rgba(29, 45, 68, 0.06);
+}
+
+
+/* =====================================================
+   MEMORY STRIP
+====================================================== */
+
+.memory-strip-section {
+    padding: 110px 45px;
+    background: #1d2d44;
+}
+
+.memory-strip-section h2,
+.memory-strip-section .eyebrow {
+    color: #ffffff;
+}
+
+.memory-strip-section .eyebrow {
+    color: #c7a46c;
+}
+
+.memory-strip-section .centered-heading p:not(.eyebrow) {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.memory-strip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.memory-photo {
+    min-height: 390px;
+    border-color: rgba(199, 164, 108, 0.65);
+    border-radius: 20px;
+}
+
+.memory-photo:nth-child(2) {
+    transform: translateY(28px);
+}
+
+
+/* =====================================================
+   NAME STORY
+====================================================== */
+
+.name-story-section {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 780px);
+    gap: 40px;
+    justify-content: center;
+    padding: 120px 45px;
+    background: #ffffff;
+}
+
+.name-story-icon {
+    display: flex;
+    width: 105px;
+    height: 105px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #1d2d44;
+    color: #c7a46c;
+    font-size: 2.5rem;
+    box-shadow: 0 20px 45px rgba(29, 45, 68, 0.16);
+}
+
+.name-story-copy p:not(.eyebrow):not(.featured-quote) {
+    color: #536277;
+    font-size: 1.03rem;
+}
+
+.featured-quote {
+    margin: 30px 0 0;
+    color: #9a7844;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.2 !important;
+}
+
+
+/* =====================================================
+   RULES COMPARISON
+====================================================== */
+
+.rules-comparison {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin: 32px 0;
+}
+
+.rules-column {
+    padding: 24px;
+    border-radius: 17px;
+}
+
+.rules-column h3 {
+    font-size: 1rem;
+}
+
+.rules-column ul {
+    display: grid;
+    gap: 13px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.rules-column li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    color: #34445b;
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.rules-column i {
+    margin-top: 3px;
+}
+
+.original-rules {
+    background: #f4ece8;
+}
+
+.original-rules i {
+    color: #a5574d;
+}
+
+.current-rules {
+    background: #edf1e9;
+}
+
+.current-rules i {
+    color: #557754;
+}
+
+
+/* =====================================================
+   TURNING POINT
+====================================================== */
+
+.turning-point-section {
+    padding: 115px 45px;
+    background:
+        linear-gradient(
+            rgba(29, 45, 68, 0.97),
+            rgba(29, 45, 68, 0.97)
+        );
+    color: #ffffff;
+}
+
+.turning-point-heading {
+    max-width: 1120px;
+    margin: 0 auto 50px;
+}
+
+.turning-point-heading h2 {
+    color: #ffffff;
+}
+
+.turning-point-heading .chapter-number {
+    color: #c7a46c;
+}
+
+.turning-point-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(340px, 0.8fr);
+    gap: 70px;
+    align-items: center;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.turning-point-copy p {
+    margin: 0 0 18px;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 1.02rem;
+}
+
+.turning-point-copy blockquote {
+    margin: 35px 0 0;
+    padding: 25px 0 25px 30px;
+    border-left: 4px solid #c7a46c;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+    line-height: 1.5;
+}
+
+.turning-point-copy blockquote strong {
+    display: block;
+    margin-top: 8px;
+    color: #c7a46c;
+}
+
+.turning-point-image {
+    min-height: 500px;
+    border-color: rgba(199, 164, 108, 0.75);
+    border-radius: 24px;
+}
+
+
+/* =====================================================
+   LIFE WITH THE CEO
+====================================================== */
+
+.ceo-life-section {
+    padding: 120px 45px;
+}
+
+.ceo-life-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.ceo-life-card {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.78fr) minmax(0, 1.22fr);
+    overflow: hidden;
+    min-height: 320px;
+    border: 1px solid rgba(199, 164, 108, 0.28);
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 18px 45px rgba(29, 45, 68, 0.07);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.ceo-life-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 55px rgba(29, 45, 68, 0.12);
+}
+
+.life-card-image {
+    min-height: 100%;
+    border: 0;
+    border-right: 1px dashed rgba(154, 120, 68, 0.42);
+    border-radius: 0;
+}
+
+.life-card-image .placeholder-inner {
+    padding: 22px;
+}
+
+.life-card-copy {
+    padding: 30px;
+}
+
+.life-card-copy p {
+    margin: 0 0 13px;
+    color: #5a687a;
+    font-size: 0.94rem;
+}
+
+
+/* =====================================================
+   FOOD NEGOTIATIONS
+====================================================== */
+
+.food-negotiation-section {
+    display: grid;
+    grid-template-columns: 110px minmax(0, 790px);
+    gap: 42px;
+    justify-content: center;
+    padding: 110px 45px;
+    background: #e9e4d9;
+}
+
+.food-negotiation-icon {
+    display: flex;
+    width: 95px;
+    height: 95px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    background: #c7a46c;
+    color: #1d2d44;
+    font-size: 2.2rem;
+    transform: rotate(-4deg);
+}
+
+.food-negotiation-copy p:not(.eyebrow):not(.featured-quote) {
+    color: #536277;
+    font-size: 1.02rem;
+}
+
+
+/* =====================================================
+   PERSONALITY
+====================================================== */
+
+.personality-section {
+    padding: 120px 45px;
+    background: #ffffff;
+}
+
+.personality-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.personality-grid article {
+    padding: 32px 26px;
+    border-top: 4px solid #c7a46c;
+    border-radius: 0 0 18px 18px;
+    background: #f7f5f0;
+}
+
+.personality-grid article > i {
+    margin-bottom: 20px;
+    color: #c7a46c;
+    font-size: 1.9rem;
+}
+
+.personality-grid p {
+    margin: 0 0 12px;
+    color: #59687a;
+    font-size: 0.93rem;
+}
+
+
+/* =====================================================
+   THREAT ASSESSMENT
+====================================================== */
+
+.threat-assessment-section {
+    padding: 110px 45px;
+    background: #1d2d44;
+}
+
+.threat-assessment-heading {
+    max-width: 760px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.threat-assessment-heading h2 {
+    color: #ffffff;
+}
+
+.threat-assessment-heading .eyebrow {
+    color: #c7a46c;
+}
+
+.threat-assessment-heading > p:not(.eyebrow) {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.threat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.threat-grid article {
+    padding: 35px 30px;
+    border: 1px solid rgba(199, 164, 108, 0.35);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.threat-grid article > i {
+    margin-bottom: 20px;
+    color: #c7a46c;
+    font-size: 2rem;
+}
+
+.threat-grid h3 {
+    color: #ffffff;
+}
+
+.threat-grid p {
+    margin: 0 0 10px;
+    color: rgba(255, 255, 255, 0.69);
+    font-size: 0.93rem;
+}
+
+
+/* =====================================================
+   BRAND ORIGIN
+====================================================== */
+
+.brand-origin-section {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(370px, 0.85fr);
+    gap: 80px;
+    align-items: center;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 120px 45px;
+}
+
+.brand-origin-content p:not(.chapter-number) {
+    margin: 0 0 18px;
+    color: #536277;
+    font-size: 1.02rem;
+}
+
+.brand-origin-image {
+    min-height: 520px;
+    border-radius: 24px;
+    box-shadow: 0 25px 60px rgba(29, 45, 68, 0.14);
+}
+
+
+/* =====================================================
+   TIMELINE
+====================================================== */
+
+.timeline-section {
+    padding: 120px 45px;
+    background: #ebe6dc;
+}
+
+.enzo-timeline {
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.enzo-timeline::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 27px;
+    width: 2px;
+    background: rgba(154, 120, 68, 0.4);
+    content: "";
+}
+
+.timeline-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 28px;
+    margin-bottom: 35px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-marker {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 56px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #ebe6dc;
+    border-radius: 50%;
+    background: #1d2d44;
+    color: #c7a46c;
+}
+
+.timeline-content {
+    padding: 27px 30px;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 12px 30px rgba(29, 45, 68, 0.07);
+}
+
+.timeline-age {
+    display: block;
+    margin-bottom: 7px;
+    color: #9a7844;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.timeline-content p {
+    margin: 0;
+    color: #59687a;
+    font-size: 0.95rem;
+}
+
+
+/* =====================================================
+   BEHIND THE SCENES GALLERY
+====================================================== */
+
+.behind-scenes-section {
+    padding: 120px 45px;
+    background: #ffffff;
+}
+
+.behind-scenes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-rows: 240px;
+    gap: 18px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.gallery-photo {
+    min-height: 0;
+    border-radius: 18px;
+}
+
+.gallery-photo-large {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.gallery-photo-wide {
+    grid-column: span 2;
+}
+
+
+/* =====================================================
+   CLOSING SECTION
+====================================================== */
+
+.about-closing-section {
+    padding: 125px 45px;
+    background: #f7f5f0;
+    text-align: center;
+}
+
+.about-closing-section > * {
+    max-width: 780px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about-closing-paw {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    border-radius: 50%;
+    background: #1d2d44;
+    color: #c7a46c;
+    font-size: 2rem;
+}
+
+.about-closing-section p:not(.eyebrow):not(.about-closing-signoff) {
+    color: #536277;
+    font-size: 1.03rem;
+}
+
+.about-closing-signoff {
+    margin-top: 30px;
+    color: #1d2d44;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.35rem, 3vw, 1.8rem);
+    font-style: italic;
+    font-weight: 700;
+}
+
+.about-closing-section .primary-button {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 15px 22px;
+    border-radius: 999px;
+    background: #1d2d44;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.about-closing-section .primary-button:hover {
+    transform: translateY(-2px);
+    background: #2b4263;
+}
+
+
+/* =====================================================
+   TABLET
+====================================================== */
+
+@media (max-width: 1050px) {
+
+    .about-hero {
+        grid-template-columns: 1fr 0.85fr;
+        gap: 45px;
+    }
+
+    .ceo-profile-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-story-section,
+    .turning-point-content,
+    .brand-origin-section {
+        gap: 50px;
+    }
+
+    .ceo-life-grid {
+        grid-template-columns: 1fr;
+        max-width: 780px;
+    }
+
+    .personality-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+====================================================== */
+
+@media (max-width: 780px) {
+
+    .about-hero,
+    .about-story-section,
+    .turning-point-content,
+    .brand-origin-section {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero {
+        min-height: auto;
+        padding: 65px 22px 80px;
+    }
+
+    .about-hero-content {
+        max-width: none;
+    }
+
+    .about-hero-image {
+        min-height: 430px;
+        border-radius: 170px 170px 22px 22px;
+    }
+
+    .ceo-profile-section {
+        padding: 0 22px 75px;
+    }
+
+    .ceo-profile-card {
+        padding: 35px 25px;
+    }
+
+    .ceo-profile-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 26px 20px;
+    }
+
+    .about-story-section {
+        gap: 38px;
+        padding: 80px 22px;
+    }
+
+    .story-section-reversed .story-copy,
+    .story-section-reversed .story-image {
+        order: initial;
+    }
+
+    .story-image {
+        min-height: 390px;
+    }
+
+    .memory-strip-section,
+    .turning-point-section,
+    .ceo-life-section,
+    .personality-section,
+    .threat-assessment-section,
+    .timeline-section,
+    .behind-scenes-section {
+        padding: 85px 22px;
+    }
+
+    .memory-strip-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .memory-photo {
+        min-height: 380px;
+    }
+
+    .memory-photo:nth-child(2) {
+        transform: none;
+    }
+
+    .name-story-section,
+    .food-negotiation-section {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 85px 22px;
+    }
+
+    .name-story-icon,
+    .food-negotiation-icon {
+        width: 78px;
+        height: 78px;
+        font-size: 1.8rem;
+    }
+
+    .rules-comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .turning-point-image {
+        min-height: 410px;
+    }
+
+    .ceo-life-card {
+        grid-template-columns: 1fr;
+    }
+
+    .life-card-image {
+        min-height: 290px;
+        border-right: 0;
+        border-bottom: 1px dashed rgba(154, 120, 68, 0.42);
+    }
+
+    .personality-grid,
+    .threat-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .brand-origin-section {
+        padding: 85px 22px;
+    }
+
+    .brand-origin-image {
+        min-height: 420px;
+    }
+
+    .behind-scenes-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-rows: 210px;
+    }
+
+    .gallery-photo-large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .about-closing-section {
+        padding: 90px 22px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+====================================================== */
+
+@media (max-width: 520px) {
+
+    .about-enzo-page h1 {
+        font-size: 3.1rem;
+    }
+
+    .about-enzo-page h2 {
+        font-size: 2.15rem;
+    }
+
+    .about-hero-badges {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .about-hero-badges span {
+        justify-content: center;
+    }
+
+    .about-hero-image {
+        min-height: 350px;
+    }
+
+    .ceo-profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ceo-life-card {
+        min-height: 0;
+    }
+
+    .timeline-item {
+        grid-template-columns: 46px minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .enzo-timeline::before {
+        left: 22px;
+    }
+
+    .timeline-marker {
+        width: 46px;
+        height: 46px;
+    }
+
+    .timeline-content {
+        padding: 23px 21px;
+    }
+
+    .behind-scenes-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery-photo,
+    .gallery-photo-large,
+    .gallery-photo-wide {
+        min-height: 310px;
+    }
+
+}
