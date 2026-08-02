@@ -3267,3 +3267,697 @@ body {
     }
 
 }
+/* =========================================================
+   REUSABLE HEADER
+========================================================= */
+
+#site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.ehn-header {
+    position: relative;
+    z-index: 1002;
+
+    width: 100%;
+
+    background: #001a39;
+    border-bottom: 3px solid #c7a46c;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16);
+}
+
+.ehn-header-inner {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: min(1450px, calc(100% - 3rem));
+    min-height: 72px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER LOGO
+========================================================= */
+
+.ehn-logo-link {
+    display: inline-flex;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+.ehn-site-logo {
+    display: block;
+
+    width: auto;
+    max-width: 165px;
+    height: 48px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   MENU BUTTON
+========================================================= */
+
+.ehn-menu-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+
+    min-width: 116px;
+    min-height: 46px;
+    padding: 0.6rem 0.9rem;
+
+    font: inherit;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background: transparent;
+
+    border: 1px solid rgba(199, 164, 108, 0.75);
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.ehn-menu-button:hover,
+.ehn-menu-button:focus-visible {
+    color: #001a39;
+    background: #c7a46c;
+    border-color: #c7a46c;
+    box-shadow: 0 0 18px rgba(199, 164, 108, 0.35);
+}
+
+.ehn-menu-button:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.9);
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   BURGER ICON
+========================================================= */
+
+.ehn-menu-icon {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 23px;
+    height: 17px;
+}
+
+.ehn-menu-icon span {
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    background: currentColor;
+    border-radius: 10px;
+
+    transform-origin: center;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.2s ease;
+}
+
+.ehn-header.menu-open .ehn-menu-icon span:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+}
+
+.ehn-header.menu-open .ehn-menu-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.ehn-header.menu-open .ehn-menu-icon span:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+}
+
+
+/* =========================================================
+   DROPDOWN NAVIGATION
+========================================================= */
+
+.ehn-navigation {
+    position: absolute;
+    top: calc(100% + 3px);
+    right: 0;
+
+    width: min(380px, calc(100vw - 2rem));
+    max-height: calc(100vh - 90px);
+
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(0, 26, 57, 0.12);
+    border-top: 4px solid #c7a46c;
+    border-radius: 0 0 10px 10px;
+
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-10px);
+    pointer-events: none;
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease,
+        transform 0.2s ease;
+}
+
+.ehn-navigation.is-open {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
+/* =========================================================
+   NAVIGATION HEADING
+========================================================= */
+
+.ehn-navigation-heading {
+    padding: 1rem 1.25rem;
+
+    color: #ffffff;
+    background: #001a39;
+
+    text-align: center;
+}
+
+.ehn-navigation-eyebrow {
+    display: block;
+
+    margin-bottom: 0.25rem;
+
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    color: #c7a46c;
+}
+
+.ehn-navigation-title {
+    display: block;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   MAIN NAVIGATION LINKS
+========================================================= */
+
+.ehn-navigation-links {
+    display: grid;
+    gap: 0.25rem;
+
+    padding: 0.65rem;
+}
+
+.ehn-navigation-links a {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    align-items: center;
+    gap: 0.75rem;
+
+    min-height: 46px;
+    padding: 0.65rem 0.85rem;
+
+    font-size: 0.92rem;
+    font-weight: 650;
+
+    color: #001a39;
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.ehn-navigation-links a i {
+    width: 22px;
+
+    color: #c7a46c;
+
+    text-align: center;
+}
+
+.ehn-navigation-links a:hover,
+.ehn-navigation-links a:focus-visible {
+    color: #001a39;
+    background: rgba(199, 164, 108, 0.2);
+
+    transform: translateX(3px);
+}
+
+.ehn-navigation-links a:focus-visible {
+    outline: 2px solid #001a39;
+    outline-offset: -2px;
+}
+
+.ehn-navigation-links a.is-active {
+    color: #ffffff;
+    background: #001a39;
+}
+
+.ehn-navigation-links a.is-active i {
+    color: #c7a46c;
+}
+
+
+/* =========================================================
+   NAVIGATION LEGAL LINKS
+========================================================= */
+
+.ehn-navigation-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.9rem;
+
+    padding: 0.8rem 1rem;
+
+    background: #f4f4f4;
+    border-top: 1px solid rgba(0, 26, 57, 0.12);
+}
+
+.ehn-navigation-footer a {
+    font-size: 0.7rem;
+    font-weight: 600;
+
+    color: #53606d;
+    text-decoration: none;
+}
+
+.ehn-navigation-footer a:hover,
+.ehn-navigation-footer a:focus-visible {
+    color: #001a39;
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   MENU OVERLAY
+========================================================= */
+
+.ehn-menu-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1001;
+
+    background: rgba(0, 15, 34, 0.58);
+
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease;
+}
+
+.ehn-menu-overlay.is-visible {
+    opacity: 1;
+    visibility: visible;
+
+    pointer-events: auto;
+}
+
+body.ehn-menu-is-open {
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   REUSABLE FOOTER
+========================================================= */
+
+#site-footer {
+    width: 100%;
+}
+
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    padding: 2.5rem 1.5rem 2rem;
+
+    box-sizing: border-box;
+
+    color: #ffffff;
+    background: #001a39;
+
+    text-align: center;
+}
+
+.footer-logo {
+    display: block;
+
+    width: auto;
+    max-width: 190px;
+    height: 58px;
+    margin-bottom: 1.5rem;
+
+    object-fit: contain;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.8rem;
+
+    width: min(1100px, 100%);
+}
+
+.footer-nav a {
+    font-size: 0.84rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus-visible {
+    color: #c7a46c;
+}
+
+.footer-divider {
+    width: 58px;
+    height: 3px;
+    margin: 1.5rem auto;
+
+    background: #c7a46c;
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   FOOTER SOCIAL LINKS
+========================================================= */
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.footer-socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 34px;
+    min-height: 34px;
+
+    font-size: 1.7rem;
+
+    color: #c7a46c;
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.footer-socials a:hover,
+.footer-socials a:focus-visible {
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+.footer-giphy-link {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem !important;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+
+/* =========================================================
+   FOOTER LEGAL LINKS
+========================================================= */
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.4rem;
+
+    margin-bottom: 1.35rem;
+}
+
+.footer-links a {
+    font-size: 0.78rem;
+    font-weight: 500;
+
+    color: rgba(255, 255, 255, 0.88);
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+    color: #c7a46c;
+}
+
+.copyright {
+    margin: 0;
+
+    font-size: 0.76rem;
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.gold-heart {
+    color: #c7a46c;
+}
+
+
+/* =========================================================
+   COMPONENT LOAD ERROR
+========================================================= */
+
+.component-error {
+    margin: 0;
+    padding: 1rem;
+
+    color: #ffffff;
+    background: #8b1e1e;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .ehn-header-inner {
+        width: calc(100% - 2rem);
+    }
+
+    .footer-nav {
+        gap: 0.75rem 1.25rem;
+    }
+}
+
+
+/* =========================================================
+   MOBILE HEADER AND FOOTER
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .ehn-header-inner {
+        width: calc(100% - 1.5rem);
+        min-height: 64px;
+    }
+
+    .ehn-site-logo {
+        max-width: 145px;
+        height: 43px;
+    }
+
+    .ehn-menu-button {
+        min-width: 46px;
+        min-height: 42px;
+        padding: 0.55rem 0.65rem;
+    }
+
+    .ehn-menu-button-text {
+        position: absolute;
+
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+
+        border: 0;
+    }
+
+    .ehn-navigation {
+        position: fixed;
+        top: 67px;
+        right: 0;
+        left: 0;
+
+        width: 100%;
+        max-height: calc(100vh - 67px);
+
+        border-right: 0;
+        border-left: 0;
+        border-radius: 0;
+    }
+
+    .ehn-navigation-heading {
+        padding: 0.9rem 1rem;
+    }
+
+    .ehn-navigation-title {
+        font-size: 1.1rem;
+    }
+
+    .ehn-navigation-links {
+        padding: 0.55rem;
+    }
+
+    .ehn-navigation-links a {
+        min-height: 44px;
+        padding: 0.6rem 0.8rem;
+    }
+
+    .ehn-navigation-footer {
+        padding: 0.75rem 1rem;
+    }
+
+    .site-footer {
+        padding: 2rem 1.25rem 1.6rem;
+    }
+
+    .footer-logo {
+        max-width: 165px;
+        height: 50px;
+        margin-bottom: 1.25rem;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .footer-nav a {
+        font-size: 0.8rem;
+    }
+
+    .footer-divider {
+        margin: 1.35rem auto;
+    }
+
+    .footer-socials {
+        gap: 1rem;
+        margin-bottom: 1.35rem;
+    }
+
+    .footer-socials a {
+        font-size: 1.5rem;
+    }
+
+    .footer-giphy-link {
+        font-size: 1.3rem !important;
+    }
+
+    .footer-links {
+        gap: 0.65rem 1rem;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .ehn-site-logo {
+        max-width: 130px;
+        height: 40px;
+    }
+
+    .ehn-menu-icon {
+        width: 21px;
+        height: 16px;
+    }
+
+    .ehn-navigation-links a {
+        font-size: 0.88rem;
+    }
+
+    .footer-socials {
+        gap: 0.8rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 0.55rem;
+    }
+
+    .copyright {
+        max-width: 290px;
+    }
+}
