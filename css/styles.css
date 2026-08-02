@@ -3961,3 +3961,776 @@ body.ehn-menu-is-open {
         max-width: 290px;
     }
 }
+/* =========================================================
+   REACTION DEPARTMENT / GIPHY PAGE
+========================================================= */
+
+.giphy-page {
+    color: #001a39;
+    background: #f8f8f8;
+}
+
+
+/* =========================================================
+   GIPHY HERO
+========================================================= */
+
+.giphy-hero {
+    display: flex;
+    justify-content: center;
+
+    padding: 6rem 1.5rem;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(199, 164, 108, 0.23),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            rgba(255, 255, 255, 0.06),
+            transparent 30%
+        ),
+        #001a39;
+}
+
+.giphy-hero-content {
+    width: min(950px, 100%);
+
+    color: #ffffff;
+    text-align: center;
+}
+
+.giphy-hero .eyebrow {
+    color: #c7a46c;
+}
+
+.giphy-hero h1 {
+    max-width: 850px;
+    margin: 0 auto 1.4rem;
+
+    font-size: clamp(2.7rem, 6vw, 5rem);
+    line-height: 1.05;
+
+    color: #ffffff;
+}
+
+.giphy-hero-intro {
+    max-width: 680px;
+    margin: 0 auto;
+
+    font-size: 1.15rem;
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* =========================================================
+   GIPHY STATS
+========================================================= */
+
+.giphy-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+
+    max-width: 780px;
+    margin: 2.5rem auto;
+}
+
+.giphy-stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 105px;
+    padding: 1.25rem 1rem;
+
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(199, 164, 108, 0.5);
+    border-radius: 10px;
+}
+
+.giphy-stat strong {
+    display: block;
+
+    margin-bottom: 0.4rem;
+
+    font-size: clamp(1.6rem, 3vw, 2.15rem);
+    line-height: 1;
+
+    color: #c7a46c;
+}
+
+.giphy-stat span {
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   GIPHY BUTTONS
+========================================================= */
+
+.giphy-primary-button,
+.giphy-secondary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+
+    min-height: 52px;
+    padding: 0.8rem 1.35rem;
+
+    box-sizing: border-box;
+
+    font-weight: 750;
+    text-decoration: none;
+
+    border: 2px solid #c7a46c;
+    border-radius: 7px;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.giphy-primary-button {
+    color: #001a39;
+    background: #c7a46c;
+}
+
+.giphy-primary-button:hover,
+.giphy-primary-button:focus-visible {
+    color: #ffffff;
+    background: transparent;
+
+    box-shadow: 0 8px 24px rgba(199, 164, 108, 0.2);
+    transform: translateY(-2px);
+}
+
+.giphy-secondary-button {
+    color: #ffffff;
+    background: #001a39;
+}
+
+.giphy-secondary-button:hover,
+.giphy-secondary-button:focus-visible {
+    color: #001a39;
+    background: #c7a46c;
+
+    transform: translateY(-2px);
+}
+
+.giphy-wordmark {
+    font-size: 1.05rem;
+    letter-spacing: 0.03em;
+}
+
+
+/* =========================================================
+   STORY SECTION
+========================================================= */
+
+.giphy-story {
+    padding: 5rem 1.5rem;
+
+    background: #ffffff;
+}
+
+.giphy-story-content {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: center;
+
+    width: min(950px, 100%);
+    margin: 0 auto;
+}
+
+.giphy-story-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 120px;
+    height: 120px;
+
+    font-size: 2.8rem;
+
+    color: #001a39;
+    background: #c7a46c;
+
+    border-radius: 50%;
+    box-shadow: 0 12px 28px rgba(0, 26, 57, 0.15);
+}
+
+.giphy-story-copy h2,
+.featured-gifs-heading h2,
+.find-enzo-content h2,
+.giphy-form-copy h2,
+.giphy-final-cta h2 {
+    margin: 0.35rem 0 1rem;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.15;
+}
+
+.giphy-story-copy p:not(.eyebrow) {
+    margin: 0 0 1rem;
+
+    font-size: 1.03rem;
+    line-height: 1.8;
+
+    color: #53606d;
+}
+
+.giphy-story-copy strong {
+    color: #001a39;
+}
+
+
+/* =========================================================
+   FEATURED GIFS
+========================================================= */
+
+.featured-gifs-section {
+    padding: 5rem 1.5rem;
+}
+
+.featured-gifs-heading {
+    width: min(750px, 100%);
+    margin: 0 auto 3rem;
+
+    text-align: center;
+}
+
+.featured-gifs-heading p:not(.eyebrow) {
+    font-size: 1.05rem;
+    line-height: 1.7;
+
+    color: #53606d;
+}
+
+.giphy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.75rem;
+
+    width: min(1200px, 100%);
+    margin: 0 auto;
+}
+
+.giphy-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    background: #ffffff;
+    border: 1px solid rgba(0, 26, 57, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 26, 57, 0.1);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.giphy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 38px rgba(0, 26, 57, 0.16);
+}
+
+
+/* =========================================================
+   CASE FILE LABEL
+========================================================= */
+
+.giphy-case-file-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+
+    min-height: 58px;
+    padding: 0.7rem 1rem;
+
+    color: #ffffff;
+    background: #001a39;
+    border-bottom: 3px solid #c7a46c;
+}
+
+.giphy-case-file-label span {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.giphy-case-file-label strong {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+
+    font-size: 0.77rem;
+    letter-spacing: 0.06em;
+    text-align: right;
+    text-transform: uppercase;
+
+    color: #c7a46c;
+}
+
+
+/* =========================================================
+   GIF EMBED AREA
+========================================================= */
+
+.giphy-embed {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+    background: #001a39;
+}
+
+.giphy-embed iframe {
+    position: absolute;
+    inset: 0;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    border: 0;
+}
+
+.giphy-embed-placeholder {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    background:
+        linear-gradient(
+            135deg,
+            #001a39,
+            #0b315d
+        );
+}
+
+.giphy-embed-placeholder i {
+    font-size: 2.5rem;
+
+    color: #c7a46c;
+}
+
+.giphy-embed-placeholder span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   GIF CARD CONTENT
+========================================================= */
+
+.giphy-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    padding: 1.5rem;
+}
+
+.giphy-card-content h3 {
+    margin: 0 0 0.55rem;
+
+    font-size: 1.45rem;
+    line-height: 1.2;
+}
+
+.giphy-case-note {
+    margin: 0 0 1rem !important;
+
+    font-size: 0.76rem;
+    font-weight: 750;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #b18339 !important;
+}
+
+.giphy-card-content p:not(.giphy-case-note) {
+    margin: 0 0 1.25rem;
+
+    line-height: 1.65;
+
+    color: #53606d;
+}
+
+.giphy-card-content a {
+    margin-top: auto;
+
+    font-weight: 750;
+
+    color: #001a39;
+    text-decoration: none;
+}
+
+.giphy-card-content a:hover,
+.giphy-card-content a:focus-visible {
+    color: #b18339;
+}
+
+
+/* =========================================================
+   FIND ENZO
+========================================================= */
+
+.find-enzo-gifs {
+    padding: 5rem 1.5rem;
+
+    color: #ffffff;
+    background: #001a39;
+}
+
+.find-enzo-content {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 2rem;
+    align-items: center;
+
+    width: min(900px, 100%);
+    margin: 0 auto;
+}
+
+.find-enzo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 100px;
+
+    font-size: 2.4rem;
+
+    color: #001a39;
+    background: #c7a46c;
+
+    border-radius: 50%;
+}
+
+.find-enzo-content .eyebrow {
+    color: #c7a46c;
+}
+
+.find-enzo-content h2 {
+    color: #ffffff;
+}
+
+.find-enzo-content p:not(.eyebrow) {
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.86);
+}
+
+.giphy-search-terms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+
+    margin-top: 1.25rem;
+}
+
+.giphy-search-terms span {
+    display: inline-flex;
+
+    padding: 0.55rem 0.9rem;
+
+    font-size: 0.84rem;
+    font-weight: 700;
+
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(199, 164, 108, 0.7);
+    border-radius: 999px;
+}
+
+
+/* =========================================================
+   GIF SUGGESTION FORM
+========================================================= */
+
+.giphy-suggestion-section {
+    padding: 5rem 1.5rem;
+
+    background: #ffffff;
+}
+
+.giphy-request-form {
+    width: min(950px, 100%);
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    background: #f8f8f8;
+    border: 1px solid rgba(0, 26, 57, 0.14);
+    border-radius: 12px;
+    box-shadow: 0 16px 35px rgba(0, 26, 57, 0.1);
+}
+
+.giphy-form-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    padding: 1rem 1.5rem;
+
+    color: #ffffff;
+    background: #001a39;
+    border-bottom: 4px solid #c7a46c;
+}
+
+.giphy-form-heading span {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    color: #c7a46c;
+}
+
+.giphy-form-heading strong {
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.giphy-form-body {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 2rem;
+    align-items: center;
+
+    padding: 2.5rem;
+}
+
+.giphy-form-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 105px;
+    height: 105px;
+
+    font-size: 2.4rem;
+
+    color: #001a39;
+    background: #c7a46c;
+
+    border-radius: 10px;
+    transform: rotate(-2deg);
+}
+
+.giphy-form-copy p:not(.eyebrow) {
+    max-width: 670px;
+
+    line-height: 1.75;
+
+    color: #53606d;
+}
+
+.giphy-processing-note {
+    margin: 1.25rem 0 !important;
+    padding: 0.9rem 1rem;
+
+    background: rgba(199, 164, 108, 0.16);
+    border-left: 4px solid #c7a46c;
+    border-radius: 0 6px 6px 0;
+}
+
+.giphy-processing-note strong {
+    color: #001a39;
+}
+
+
+/* =========================================================
+   FINAL CALL TO ACTION
+========================================================= */
+
+.giphy-final-cta {
+    padding: 5rem 1.5rem;
+
+    text-align: center;
+}
+
+.giphy-final-cta p:not(.eyebrow) {
+    max-width: 620px;
+    margin: 0 auto 1.7rem;
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+
+    color: #53606d;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .giphy-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .giphy-hero {
+        padding: 4rem 1.25rem;
+    }
+
+    .giphy-hero h1 {
+        font-size: 2.65rem;
+    }
+
+    .giphy-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .giphy-stat {
+        min-height: auto;
+        padding: 1.1rem;
+    }
+
+    .giphy-story,
+    .featured-gifs-section,
+    .find-enzo-gifs,
+    .giphy-suggestion-section,
+    .giphy-final-cta {
+        padding: 3.75rem 1.25rem;
+    }
+
+    .giphy-story-content,
+    .find-enzo-content,
+    .giphy-form-body {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .giphy-story-icon,
+    .find-enzo-icon,
+    .giphy-form-icon {
+        width: 82px;
+        height: 82px;
+        margin: 0 auto;
+
+        font-size: 2rem;
+    }
+
+    .giphy-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .giphy-search-terms {
+        justify-content: center;
+    }
+
+    .giphy-form-heading {
+        flex-direction: column;
+        gap: 0.35rem;
+
+        text-align: center;
+    }
+
+    .giphy-form-body {
+        padding: 2rem 1.25rem;
+    }
+
+    .giphy-processing-note {
+        text-align: left;
+    }
+
+    .giphy-primary-button,
+    .giphy-secondary-button {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .giphy-hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .giphy-case-file-label {
+        align-items: flex-start;
+    }
+
+    .giphy-case-file-label strong {
+        max-width: 150px;
+    }
+
+    .giphy-card-content {
+        padding: 1.25rem;
+    }
+}
+
+.featured-giphy-image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    background: #001a39;
+}
+
+.featured-giphy-image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
