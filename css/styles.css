@@ -2528,9 +2528,24 @@ body {
 }
 
 .story-image {
+    overflow: hidden;
+
     min-height: 480px;
+
     border-radius: 24px;
     box-shadow: 0 24px 55px rgba(29, 45, 68, 0.12);
+}
+
+.story-image img {
+    display: block;
+
+    width: 100%;
+    height: 480px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 24px;
 }
 
 .story-aside {
@@ -4841,4 +4856,455 @@ body.ehn-menu-is-open {
     height: 100%;
 
     object-fit: cover;
+}
+
+/* =========================================================
+   ENZO RECOMMENDS PAGE
+========================================================= */
+
+.recommends-page {
+    color: #001a39;
+    background: #f8f8f8;
+}
+
+
+/* =========================================================
+   RECOMMENDS HERO
+========================================================= */
+
+.recommends-hero {
+    display: flex;
+    justify-content: center;
+
+    padding: 6rem 1.5rem;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(199, 164, 108, 0.24),
+            transparent 34%
+        ),
+        #001a39;
+}
+
+.recommends-hero-content {
+    width: min(850px, 100%);
+
+    color: #ffffff;
+    text-align: center;
+}
+
+.recommends-hero .eyebrow {
+    color: #c7a46c;
+}
+
+.recommends-hero h1 {
+    margin: 0 auto 1.25rem;
+
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    line-height: 1.05;
+
+    color: #ffffff;
+}
+
+.recommends-hero p:not(.eyebrow) {
+    max-width: 680px;
+    margin: 0 auto;
+
+    font-size: 1.12rem;
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* =========================================================
+   RECOMMENDS INTRO
+========================================================= */
+
+.recommends-intro {
+    padding: 5rem 1.5rem;
+
+    background: #ffffff;
+}
+
+.recommends-intro-content {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 2.25rem;
+    align-items: center;
+
+    width: min(950px, 100%);
+    margin: 0 auto;
+}
+
+.recommends-intro-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 110px;
+    height: 110px;
+
+    font-size: 2.6rem;
+
+    color: #001a39;
+    background: #c7a46c;
+
+    border-radius: 50%;
+}
+
+.recommends-intro h2,
+.recommends-section-heading h2,
+.recommends-review-content h2,
+.recommends-progress-body h2 {
+    margin: 0.35rem 0 1rem;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.15;
+}
+
+.recommends-intro p:not(.eyebrow) {
+    margin: 0 0 1rem;
+
+    line-height: 1.75;
+
+    color: #53606d;
+}
+
+
+/* =========================================================
+   RECOMMENDATION CATEGORY CARDS
+========================================================= */
+
+.recommends-categories {
+    padding: 5rem 1.5rem;
+}
+
+.recommends-section-heading {
+    width: min(750px, 100%);
+    margin: 0 auto 3rem;
+
+    text-align: center;
+}
+
+.recommends-section-heading p:not(.eyebrow) {
+    line-height: 1.7;
+
+    color: #53606d;
+}
+
+.recommends-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.75rem;
+
+    width: min(1150px, 100%);
+    margin: 0 auto;
+}
+
+.recommend-category-card {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 315px;
+    padding: 2rem;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 1px solid rgba(0, 26, 57, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0, 26, 57, 0.09);
+
+    text-align: center;
+}
+
+.recommend-category-icon {
+    margin-bottom: 1.25rem;
+
+    font-size: 2.3rem;
+
+    color: #c7a46c;
+}
+
+.recommend-category-card h3 {
+    margin: 0 0 0.9rem;
+
+    font-size: 1.35rem;
+}
+
+.recommend-category-card p {
+    margin: 0 0 1.5rem;
+
+    line-height: 1.65;
+
+    color: #53606d;
+}
+
+.recommend-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+    margin-top: auto;
+    padding: 0.65rem 1rem;
+
+    box-sizing: border-box;
+
+    font-size: 0.75rem;
+    font-weight: 750;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #001a39;
+    background: rgba(199, 164, 108, 0.22);
+
+    border-radius: 999px;
+}
+
+
+/* =========================================================
+   PRODUCT REVIEW LINK
+========================================================= */
+
+.recommends-review-link {
+    padding: 5rem 1.5rem;
+
+    color: #ffffff;
+    background: #001a39;
+
+    text-align: center;
+}
+
+.recommends-review-content {
+    width: min(750px, 100%);
+    margin: 0 auto;
+}
+
+.recommends-review-content .eyebrow {
+    color: #c7a46c;
+}
+
+.recommends-review-content h2 {
+    color: #ffffff;
+}
+
+.recommends-review-content p:not(.eyebrow) {
+    max-width: 620px;
+    margin: 0 auto 1.75rem;
+
+    line-height: 1.75;
+
+    color: rgba(255, 255, 255, 0.86);
+}
+
+.recommends-primary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+
+    min-height: 52px;
+    padding: 0.8rem 1.35rem;
+
+    font-weight: 750;
+
+    color: #001a39;
+    background: #c7a46c;
+
+    border: 2px solid #c7a46c;
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.recommends-primary-button:hover,
+.recommends-primary-button:focus-visible {
+    color: #ffffff;
+    background: transparent;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   WORK IN PROGRESS NOTICE
+========================================================= */
+
+.recommends-progress-section {
+    padding: 5rem 1.5rem;
+
+    background: #ffffff;
+}
+
+.recommends-progress-card {
+    width: min(950px, 100%);
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    background: #f8f8f8;
+    border: 1px solid rgba(0, 26, 57, 0.12);
+    border-radius: 12px;
+    box-shadow: 0 16px 35px rgba(0, 26, 57, 0.1);
+}
+
+.recommends-progress-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    padding: 1rem 1.5rem;
+
+    color: #ffffff;
+    background: #001a39;
+    border-bottom: 4px solid #c7a46c;
+}
+
+.recommends-progress-heading span {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    color: #c7a46c;
+}
+
+.recommends-progress-heading strong {
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.recommends-progress-body {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 2rem;
+    align-items: center;
+
+    padding: 2.5rem;
+}
+
+.recommends-progress-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 105px;
+    height: 105px;
+
+    font-size: 2.4rem;
+
+    color: #001a39;
+    background: #c7a46c;
+
+    border-radius: 10px;
+}
+
+.recommends-progress-body p {
+    line-height: 1.75;
+
+    color: #53606d;
+}
+
+.recommends-processing-note {
+    margin-top: 1.25rem;
+    padding: 0.9rem 1rem;
+
+    background: rgba(199, 164, 108, 0.17);
+    border-left: 4px solid #c7a46c;
+    border-radius: 0 6px 6px 0;
+}
+
+.recommends-processing-note strong {
+    color: #001a39;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .recommends-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .recommends-hero {
+        padding: 4rem 1.25rem;
+    }
+
+    .recommends-hero h1 {
+        font-size: 2.65rem;
+    }
+
+    .recommends-intro,
+    .recommends-categories,
+    .recommends-review-link,
+    .recommends-progress-section {
+        padding: 3.75rem 1.25rem;
+    }
+
+    .recommends-intro-content,
+    .recommends-progress-body {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .recommends-intro-icon,
+    .recommends-progress-icon {
+        width: 82px;
+        height: 82px;
+        margin: 0 auto;
+
+        font-size: 2rem;
+    }
+
+    .recommends-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recommend-category-card {
+        min-height: 290px;
+    }
+
+    .recommends-progress-heading {
+        flex-direction: column;
+        gap: 0.35rem;
+
+        text-align: center;
+    }
+
+    .recommends-progress-body {
+        padding: 2rem 1.25rem;
+    }
+
+    .recommends-processing-note {
+        text-align: left;
+    }
+
+    .recommends-primary-button {
+        width: 100%;
+        max-width: 340px;
+
+        box-sizing: border-box;
+    }
 }
