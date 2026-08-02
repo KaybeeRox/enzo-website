@@ -3,226 +3,375 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Enzo Has Notes</title>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
+    <meta
+        name="description"
+        content="Enzo Has Notes is home to product reviews, funny Cockapoo videos, official incident reports, original Enzo GIFs and workplace complaints from one very fluffy household CEO."
+    >
+
+    <title>Enzo Has Notes | Cockapoo Videos, Reviews and GIFs</title>
+
+    <link
+        rel="stylesheet"
+        href="css/styles.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
 </head>
 
-<body>
+<body data-root="">
 
-<header class="hero">
-    <img class="hero-banner" src="images/enzo-banner.jpg" alt="Enzo Has Notes banner">
+    <!-- =====================================================
+         REUSABLE SITE HEADER
+    ====================================================== -->
 
-    <div class="hero-content">
-        <img class="hero-photo" src="images/enzo.jpg" alt="Enzo the Cockapoo">
+    <div id="site-header"></div>
 
-        <h1>Enzo Has Notes</h1>
 
-        <p>
-            Professional workplace complaints from one very fluffy household CEO.
-        </p>
-    </div>
-</header>
-    
-    <nav class="main-nav home-nav">
-    <a href="index.html">
-        <i class="fa-solid fa-house"></i> Home
-    </a>
+    <!-- =====================================================
+         HOMEPAGE HERO
+    ====================================================== -->
 
-    <a href="product-reviews.html">
-        <i class="fa-solid fa-paw"></i> Product Reviews
-    </a>
+    <header class="hero">
 
-    <a href="latest-videos.html">
-        <i class="fa-solid fa-video"></i> Latest Videos
-    </a>
+        <img
+            class="hero-banner"
+            src="images/enzo-banner.jpg"
+            alt="Enzo Has Notes banner"
+        >
 
-    <a href="incident-reports.html">
-        <i class="fa-solid fa-file-lines"></i> Incident Reports
-    </a>
+        <div class="hero-content">
 
-    <a href="#">
-        <i class="fa-solid fa-star"></i> Enzo Recommends
-    </a>
-</nav>
+            <img
+                class="hero-photo"
+                src="images/enzo.jpg"
+                alt="Enzo the black Cockapoo"
+            >
 
-   
+            <h1>
+                Enzo Has Notes
+            </h1>
 
-<section class="welcome-section">
-    <h2>Meet Enzo</h2>
+            <p>
+                Professional workplace complaints from one very fluffy
+                household CEO.
+            </p>
 
-    <p>
-        <strong>Enzo Has Notes</strong> is where one very fluffy Cockapoo documents the daily injustices of office life, reviews products, shares workplace "incident reports", and occasionally allows his human to do the typing.
-    </p>
-
-    <p>
-        Whether you found Enzo on YouTube, TikTok, Instagram, Facebook, or somewhere else on the internet, welcome! This is home base—where you'll find product recommendations, favourite toys, behind-the-scenes stories, and everything that doesn't quite fit into a social media post.
-    </p>
-</section>
-
-<section class="features">
-
-    <a href="product-reviews.html" class="feature-card card-link">
-        <div class="feature-icon">
-            <i class="fa-solid fa-paw"></i>
         </div>
-        <h3>Product Reviews</h3>
-        <p>Honest reviews of toys, treats and products Enzo actually uses.</p>
-    </a>
 
-    <a href="latest-videos.html" class="feature-card card-link">
-        <div class="feature-icon">
-            <i class="fa-solid fa-video"></i>
-        </div>
-        <h3>Latest Videos</h3>
-        <p>Catch up on Enzo's latest adventures from YouTube and across social media.</p>
-    </a>
-
-    <a href="incident-reports.html" class="feature-card card-link">
-        <div class="feature-icon">
-            <i class="fa-solid fa-file-lines"></i>
-        </div>
-        <h3>Incident Reports</h3>
-        <p>Offcial reports documenting the daily injustices of office life from the CEO himself.</p>
-    </a>
-
-    <div class="feature-card">
-        <div class="feature-icon">
-            <i class="fa-solid fa-star"></i>
-        </div>
-        <h3>Enzo's Picks</h3>
-        <p>Enzo's favourite products, toys, and treats that he recommends to his fans.</p>
-    </div>
-
-</section>
-
- <div class="social-links">
-
-    <a href="https://www.youtube.com/@enzohasnotes" target="_blank" aria-label="YouTube">
-        <i class="fa-brands fa-youtube"></i>
-    </a>
-
-    <a href="https://www.instagram.com/enzohasnotes" target="_blank" aria-label="Instagram">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
-
-    <a href="https://www.tiktok.com/@enzohasnotes" target="_blank" aria-label="TikTok">
-        <i class="fa-brands fa-tiktok"></i>
-    </a>
-
-    <a href="https://www.facebook.com/enzohasnotes" target="_blank" aria-label="Facebook">
-        <i class="fa-brands fa-facebook"></i>
-    </a>
-
-    <a href="https://x.com/enzohasnotes" target="_blank" aria-label="X">
-        <i class="fa-brands fa-x-twitter"></i>
-    </a>
-
-    <a href="https://giphy.com/channel/enzohasnotes" target="_blank" aria-label="GIPHY">
-        GIPHY
-    </a>
-
-</div>
-
-<footer class="site-footer">
-
-    <img src="images/enzo-logo.png"
-         alt="Enzo Has Notes"
-         class="footer-logo">
-
-    <nav class="footer-nav"
-         aria-label="Footer navigation">
-
-        <a href="../index.html">Home</a>
-        <a href="../product-reviews.html">Product Reviews</a>
-        <a href="../latest-videos.html">Latest Videos</a>
-        <a href="../incident-reports.html">Incident Reports</a>
-        <a href="../enzo-recommends.html">Enzo Recommends</a>
-
-    </nav>
-
-    <div class="footer-divider"></div>
+    </header>
 
 
-    <div class="footer-socials">
+    <main>
 
-        <a href="https://www.youtube.com/@EnzoHasNotes"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Enzo Has Notes on YouTube">
+        <!-- =================================================
+             WELCOME
+        ================================================== -->
 
-            <i class="fa-brands fa-youtube"></i>
+        <section class="welcome-section">
 
-        </a>
+            <p class="eyebrow">
+                Welcome to Headquarters
+            </p>
 
-        <a href="https://www.instagram.com/enzohasnotes"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Enzo Has Notes on Instagram">
+            <h2>
+                Meet Enzo
+            </h2>
 
-            <i class="fa-brands fa-instagram"></i>
+            <p>
+                <strong>Enzo Has Notes</strong>
+                is where one very fluffy Cockapoo documents the daily
+                injustices of office life, reviews products, submits official
+                incident reports and occasionally allows his human to do the
+                typing.
+            </p>
 
-        </a>
+            <p>
+                Whether you found Enzo on YouTube, TikTok, Instagram,
+                Facebook, GIPHY or somewhere else on the internet, welcome.
+                This is home base—where you will find product reviews,
+                favourite toys, behind-the-scenes stories, original reaction
+                GIFs and everything that does not quite fit into a social
+                media post.
+            </p>
 
-        <a href="https://www.tiktok.com/@enzohasnotes"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Enzo Has Notes on TikTok">
-
-            <i class="fa-brands fa-tiktok"></i>
-
-        </a>
-
-        <a href="https://www.facebook.com/enzohasnotes"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Enzo Has Notes on Facebook">
-
-            <i class="fa-brands fa-facebook"></i>
-
-        </a>
-
-        <a href="https://x.com/enzohasnotes"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Enzo Has Notes on X">
-
-            <i class="fa-brands fa-x-twitter"></i>
-
-        </a>
-
-        <a href="https://giphy.com/channel/enzohasnotes"
-           target="_blank"
-           rel="noopener noreferrer">
-
-            GIPHY
-
-        </a>
-
-    </div>
+        </section>
 
 
-    <div class="footer-links">
+        <!-- =================================================
+             WEBSITE DEPARTMENTS
+        ================================================== -->
 
-        <a href="../contact.html">Contact</a>
-        <a href="../privacy-policy.html">Privacy Policy</a>
-        <a href="../affiliate-disclosure.html">Affiliate Disclosure</a>
-        <a href="../terms.html">Terms of Use</a>
+        <section
+            class="features"
+            aria-label="Explore Enzo Has Notes"
+        >
 
-    </div>
+            <a
+                href="product-reviews.html"
+                class="feature-card card-link"
+            >
+
+                <div class="feature-icon" aria-hidden="true">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+
+                <h3>
+                    Product Reviews
+                </h3>
+
+                <p>
+                    Honest reviews of toys, treats and products Enzo actually
+                    uses.
+                </p>
+
+                <span class="feature-card-link">
+                    Read the Reviews
+                    <span aria-hidden="true">→</span>
+                </span>
+
+            </a>
 
 
-    <p class="copyright">
+            <a
+                href="latest-videos.html"
+                class="feature-card card-link"
+            >
 
-        © 2026 Enzo Has Notes. Built with
-        <span class="gold-heart">♥</span>
-        by Enzo's human.
+                <div class="feature-icon" aria-hidden="true">
+                    <i class="fa-solid fa-video"></i>
+                </div>
 
-    </p>
+                <h3>
+                    Latest Videos
+                </h3>
 
-</footer>
+                <p>
+                    Catch up on Enzo's latest adventures, investigations and
+                    highly important workplace activity.
+                </p>
+
+                <span class="feature-card-link">
+                    Watch the Evidence
+                    <span aria-hidden="true">→</span>
+                </span>
+
+            </a>
+
+
+            <a
+                href="incident-reports.html"
+                class="feature-card card-link"
+            >
+
+                <div class="feature-icon" aria-hidden="true">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+
+                <h3>
+                    Incident Reports
+                </h3>
+
+                <p>
+                    Official reports documenting the daily injustices of
+                    household office life from the CEO himself.
+                </p>
+
+                <span class="feature-card-link">
+                    Open the Case Files
+                    <span aria-hidden="true">→</span>
+                </span>
+
+            </a>
+
+
+            <a
+                href="giphy-collection.html"
+                class="feature-card card-link"
+            >
+
+                <div class="feature-icon" aria-hidden="true">
+                    <i class="fa-solid fa-masks-theater"></i>
+                </div>
+
+                <h3>
+                    Reaction Department
+                </h3>
+
+                <p>
+                    Explore Enzo's original GIF collection, featuring more
+                    than 176 reactions and over 13.7 million views.
+                </p>
+
+                <span class="feature-card-link">
+                    Browse Enzo's GIFs
+                    <span aria-hidden="true">→</span>
+                </span>
+
+            </a>
+
+
+            <a
+                href="enzo-recommends.html"
+                class="feature-card card-link"
+            >
+
+                <div class="feature-icon" aria-hidden="true">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <h3>
+                    Enzo Recommends
+                </h3>
+
+                <p>
+                    Enzo's favourite toys, treats and products personally
+                    approved by management.
+                </p>
+
+                <span class="feature-card-link">
+                    View the CEO's Picks
+                    <span aria-hidden="true">→</span>
+                </span>
+
+            </a>
+
+
+            <a
+                href="about-enzo.html"
+                class="feature-card card-link"
+            >
+
+                <div class="feature-icon" aria-hidden="true">
+                    <i class="fa-solid fa-dog"></i>
+                </div>
+
+                <h3>
+                    About Enzo
+                </h3>
+
+                <p>
+                    Meet the Cockapoo behind the notes and discover the story
+                    of Enzo's life, personality and rise to management.
+                </p>
+
+                <span class="feature-card-link">
+                    Meet the CEO
+                    <span aria-hidden="true">→</span>
+                </span>
+
+            </a>
+
+        </section>
+
+
+        <!-- =================================================
+             SOCIAL LINKS
+        ================================================== -->
+
+        <section class="home-social-section">
+
+            <div class="home-social-heading">
+
+                <p class="eyebrow">
+                    Follow the CEO
+                </p>
+
+                <h2>
+                    Find Enzo Across the Internet
+                </h2>
+
+                <p>
+                    Follow Enzo for new videos, workplace complaints, product
+                    investigations and official reaction GIFs.
+                </p>
+
+            </div>
+
+            <div class="social-links">
+
+                <a
+                    href="https://www.youtube.com/@enzohasnotes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Enzo Has Notes on YouTube"
+                >
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a
+                    href="https://www.instagram.com/enzohasnotes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Enzo Has Notes on Instagram"
+                >
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a
+                    href="https://www.tiktok.com/@enzohasnotes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Enzo Has Notes on TikTok"
+                >
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a
+                    href="https://www.facebook.com/enzohasnotes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Enzo Has Notes on Facebook"
+                >
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a
+                    href="https://x.com/enzohasnotes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Enzo Has Notes on X"
+                >
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a
+                    href="https://giphy.com/channel/enzohasnotes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Enzo Has Notes on GIPHY"
+                    class="home-giphy-link"
+                >
+                    GIPHY
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         REUSABLE SITE FOOTER
+    ====================================================== -->
+
+    <div id="site-footer"></div>
+
+
+    <!-- =====================================================
+         SCRIPTS
+    ====================================================== -->
+
+    <script src="js/components.js"></script>
 
 </body>
 
