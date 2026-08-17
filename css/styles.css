@@ -1818,6 +1818,12 @@ body {
     border-bottom: 1px solid #E3D2B3;
 }
 
+.incident-card-icon + .review-card-content h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
 .incident-card-meta {
     display: flex;
     justify-content: center;
@@ -1862,6 +1868,89 @@ body {
         text-align: center;
     }
 
+}
+/* =========================================================
+   INCIDENT REPORT - SAUSAGEGATE EXTRAS
+========================================================= */
+
+.incident-subtitle {
+    margin: -0.5rem 0 1.5rem;
+    color: #666;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+
+/* Highlighted statements inside incident reports */
+
+.incident-emphasis {
+    margin: 1.75rem 0;
+    padding: 1rem 1.25rem;
+    background: #F8F3E8;
+    border-left: 4px solid #C7A46C;
+    border-radius: 8px;
+    color: #001A39;
+    font-size: 1.05rem;
+}
+
+
+/* Sausagegate commercial arrangement */
+
+.incident-callout {
+    margin: 1.75rem 0 2rem;
+    padding: 1.5rem;
+    background: #FFF8E8;
+    border: 1px solid #E3D2B3;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.incident-callout p {
+    margin: 0.4rem 0 !important;
+    color: #001A39;
+}
+
+.incident-callout strong {
+    font-size: 1.1rem;
+}
+
+
+/* Findings / evidence lists */
+
+.incident-findings {
+    margin: 1.5rem 0 2rem;
+    padding-left: 1.5rem;
+}
+
+.incident-findings li {
+    margin-bottom: 0.75rem;
+    line-height: 1.65;
+}
+
+.incident-findings li::marker {
+    color: #C7A46C;
+    font-weight: 700;
+}
+
+
+/* Ongoing case status */
+
+.incident-status.ongoing {
+    background: #FFF3D6;
+    color: #8A5A00;
+    border: 1px solid #D9B66F;
+}
+
+
+/* Small section labels */
+
+.incident-section-label {
+    margin-bottom: 0.4rem !important;
+    color: #C7A46C;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 /* ===================================

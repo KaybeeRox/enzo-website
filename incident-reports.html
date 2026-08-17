@@ -46,30 +46,35 @@
 
 
     <section class="review-filters"
-             aria-label="Incident report categories">
+            aria-label="Incident report categories">
 
         <button class="filter-pill active"
-                type="button">
+                type="button"
+                data-filter="all">
             All Reports
         </button>
 
         <button class="filter-pill"
-                type="button">
+                type="button"
+                data-filter="sleeping-quarters">
             Sleeping Quarters
         </button>
 
         <button class="filter-pill"
-                type="button">
+                type="button"
+                data-filter="hooman-performance">
             Hooman Performance
         </button>
 
         <button class="filter-pill"
-                type="button">
+                type="button"
+                data-filter="security">
             Security
         </button>
 
         <button class="filter-pill"
-                type="button">
+                type="button"
+                data-filter="treats-morale">
             Treats &amp; Morale
         </button>
 
@@ -80,7 +85,8 @@
              aria-label="Incident report archive">
 
         <a href="incident-reports/330-executive-briefing.html"
-           class="review-card">
+           class="review-card"
+           data-category="sleeping-quarters">
 
             <div class="incident-card-icon">
 
@@ -128,11 +134,62 @@
 
         </a>
 
+                <a href="incident-reports/sausagegate.html"
+           class="review-card"
+           data-category="treats-morale">
+
+            <div class="incident-card-icon">
+
+                <i class="fa-solid fa-drumstick-bite"></i>
+
+            </div>
+
+            <div class="review-card-content">
+
+                <p class="review-category">
+                    Treats &amp; Morale
+                </p>
+
+                <h2>
+                    Sausagegate
+                </h2>
+
+                <div class="review-card-rating incident-card-meta">
+
+                    <i class="fa-solid fa-file-lines"></i>
+
+                    <span>
+                        Ongoing Investigation
+                    </span>
+
+                </div>
+
+                <p class="incident-severity">
+                    <span class="severity-dot"></span>
+                    High Priority Treat Procurement
+                </p>
+
+                <p>
+                    Three incidents. One village café. Four pieces of
+                    sausage. An ongoing investigation into the CEO's
+                    increasingly determined local procurement strategy.
+                </p>
+
+                <span class="read-review">
+                    Open Case File →
+                </span>
+
+            </div>
+
+        </a>
+
     </section>
 
 </main>
 
-<div id="site-footer"></div>    
+<div id="site-footer"></div>
+
+<script src="js/review-filters.js"></script>
 <script src="js/components.js"></script>
 
 </body>
